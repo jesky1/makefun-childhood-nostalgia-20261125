@@ -32,6 +32,12 @@ export function validateLine(text) {
     if (ch.charCodeAt(0) < 0x20 && ch !== "\t")
       return "entry must not contain control characters";
   }
+  if (text.includes("  "))
+    return "entry must not contain double spaces";
+  if (!/[.!?]$/.test(text))
+    return "entry must end with terminal punctuation (. ! or ?)";
+  if (/https?:\/\/|www\./i.test(text))
+    return "entry must not contain a URL";
   return null;
 }
 
