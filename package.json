@@ -1,0 +1,1 @@
+{"description":"make.fun entry: one sentence of childhood nostalgia, at most 280 characters","engines":{"node":">=20"},"name":"makefun-childhood-nostalgia-20261125","private":true,"scripts":{"start":"node main.ts","test":"node --test test.mjs"},"type":"module","version":"1.0.0"}
